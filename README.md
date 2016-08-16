@@ -1,3 +1,4 @@
+###Note: This is the 2.x content, the EFZP.py file is for 3.x
 #EFZP
 An acronym for Email Functional Zone Parser
 
