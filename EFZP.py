@@ -181,5 +181,10 @@ def get_salutation(email_text):
     if not groups is None:
         if "salutation" in groups.groupdict():
             salutation = groups.groupdict()["salutation"]
+    else:
+      pattern = "(\w{0,5})(,\\n\\n)"
+      groups = re.match(pattern, email_text, re.IGNORECASE)
+    if(groups):
+      salutation = groups.group(0)
     return salutation
     
